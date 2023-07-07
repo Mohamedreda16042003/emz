@@ -7,9 +7,13 @@
     --active-color: #007eff;
     /* ................ */
 
+    --bg-c-nav: rgb(248, 249, 250);
+
     --color-primary1: #007bff;
     --color-primary2: #4a4a4a;
     --color-primary3: #ffffff;
+    --p-color: #22576a;
+    --header-color: #112b35;
 }
 
 html {
@@ -46,7 +50,7 @@ img {
 }
 
 .home {
-    background-color: var(--bold-color);
+    background-color: #eff7fa;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -65,7 +69,8 @@ img {
 
 .on_nav-active {
     height: 80px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--bg-c-nav);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
 }
 
 .home nav .logo a {
@@ -86,7 +91,6 @@ img {
     align-items: center;
 }
 
-
 .home .list_nav li {
     list-style: none;
 }
@@ -94,7 +98,7 @@ img {
 .home .list_nav li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: var(--home-font);
     letter-spacing: 1px;
     font-size: 1.1rem;
@@ -187,7 +191,8 @@ img {
     min-height: calc(100vh - 100px);
     display: flex;
     align-items: center;
-    background-color: var(--bold-color);
+
+    background-color: #eff7fa;
 }
 
 .home_hero .hero_section {
@@ -195,11 +200,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #112b35;
 }
 
 .home_hero .hero_section .left {
     width: 60%;
-    color: var(--white-color);
 }
 
 .home_hero .hero_section .left h1 {
@@ -226,8 +231,8 @@ img {
 
 .home_hero .hero_section .left p {
     width: 60%;
+    color: #22576a;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.3);
     line-height: 1.5;
 }
 
@@ -404,7 +409,7 @@ img {
 /* footer................. */
 
 .home_footer {
-    background-color: var(--bold-color);
+    background-color: var(--color-primary1);
     display: flex;
     align-items: center;
     height: 80px;
@@ -422,7 +427,7 @@ img {
     width: 1px;
     height: 25px;
     margin: 0 20px;
-    background-color: var(--active-color);
+    background-color: var(--header-color);
 }
 
 @media (width < 820px) {
@@ -464,8 +469,12 @@ img {
     margin-bottom: 0;
     font-family: var(--home-font);
 }
+/* .................... */
 
-.header_sec p {
-    margin-top: 10px;
-    color: rgba(0, 0, 0, 0.617);
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary1);
 }

@@ -1,3 +1,21 @@
+:root {
+    --home-font: "Belanosima", sans-serif;
+    --normal-font: "Roboto Condensed", sans-serif;
+    --bold-color: #14213d;
+    --white-color: #ffffff;
+    --p-color: #ffffffaf;
+    --active-color: #007eff;
+    /* ................ */
+
+    --bg-c-nav: rgb(248, 249, 250);
+
+    --color-primary1: #007bff;
+    --color-primary2: #4a4a4a;
+    --color-primary3: #ffffff;
+    --p-color: #22576a;
+    --header-color: #112b35;
+}
+
 .contact_us_green * {
     font-family: Nunito, sans-serif;
 }
@@ -33,6 +51,7 @@
     margin-bottom: 0px;
     margin-left: 0px;
     line-height: 25px;
+    color: var(--header-color);
 }
 
 .contact_us_green .responsive-cell-block {
@@ -74,7 +93,7 @@
     margin-left: 0px;
 }
 
-.contact_us_green .contact-svg {
+.address .contact-svg {
     padding-top: 0px;
     padding-right: 25px;
     padding-bottom: 0px;
@@ -91,6 +110,16 @@
     width: 250px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.phone svg {
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-right: 10px;
+    height: 40px;
 }
 
 .contact_us_green .social-svg {
@@ -113,70 +142,46 @@
 .contact_us_green .input {
     height: 50px;
     width: 90%;
-    border-top-width: 2.5px;
-    border-right-width: 2.5px;
-    border-bottom-width: 2.5px;
-    border-left-width: 2.5px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: #a2a2a2;
-    border-right-color: #a2a2a2;
-    border-bottom-color: #a2a2a2;
-    border-left-color: #a2a2a2;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border: 2px solid #dee2e6;
+
+    border-radius: 5px;
+
     font-size: 16px;
     padding-top: 5px;
     padding-right: 15px;
     padding-bottom: 5px;
     padding-left: 15px;
+    transition: 0.15s ease-in-out;
 }
 
 .contact_us_green .textinput {
     height: 200px;
     width: 95%;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: #a2a2a2;
-    border-right-color: #a2a2a2;
-    border-bottom-color: #a2a2a2;
-    border-left-color: #a2a2a2;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border: 2px solid #dee2e6;
+
+    border-radius: 5px;
     font-size: 16px;
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
     padding-left: 20px;
     resize: none;
+    transition: 0.15s ease-in-out;
+}
+
+.contact_us_green .textinput:focus,
+.contact_us_green .input:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
 .contact_us_green .submit-btn {
     min-width: 290px;
     height: 60px;
-    background-color: #1c3b28;
+    background-color: #007bff;
     font-size: 18px;
     font-weight: 700;
     color: white;
