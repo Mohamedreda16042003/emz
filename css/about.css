@@ -1,84 +1,89 @@
 .header_about {
-  height: 170px;
+    height: 170px;
 }
 
 .text_about {
-  color: rgba(0, 0, 0, 0.7);
-  margin: 20px 0;
-  font-size: 1.05rem;
-  line-height: 1.4;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.header_about p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .about_des {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about_des .img_about {
-  width: 45%;
+    width: 45%;
 }
 
 .about_des .text_place {
-  width: 48%;
+    width: 48%;
 }
 
 .about_des img {
-  width: 80%;
-  display: block;
+    width: 80%;
+    display: block;
 }
 
 .sec_about-2 {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 
 .sec_about-2 .about_des {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .sec_three .contant h1 .emz_color {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .sec_three {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 
 .sec_three .contant h1 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .sec_three .contant .text_cont {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2rem;
-  max-width: 80%;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    max-width: 80%;
 }
 
 .sec_three .contant a {
-  color: black;
-  font-size: 1.1rem;
-  text-decoration: underline;
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: underline;
 }
 
 @media (width < 850px) {
-  .about_des {
-    flex-direction: column;
-  }
-  .about_des .img_about {
-    width: 90%;
-  }
+    .about_des {
+        flex-direction: column;
+    }
+    .about_des .img_about {
+        width: 90%;
+    }
 
-  .about_des .text_place {
-    width: 90%;
-  }
+    .about_des .text_place {
+        width: 90%;
+    }
 
-  .sec_about-2 .about_des {
-    flex-direction: column;
-  }
+    .sec_about-2 .about_des {
+        flex-direction: column;
+    }
 
-  .img_about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .img_about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
