@@ -296,7 +296,6 @@ img {
     border: 0;
     background-color: var(--active-color);
     color: hsl(0, 0%, 100%);
-
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
