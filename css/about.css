@@ -1,5 +1,5 @@
 .header_about {
-    height: 170px;
+    min-height: 170px;
 }
 
 .text_about {

@@ -9,7 +9,7 @@
     background-color: #fff;
     color: #697e91;
     max-width: 300px;
-    margin: 20px;
+    margin: 40px 20px;
 }
 
 .plan:nth-child(1) {
@@ -152,7 +152,12 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    flex-wrap: wrap;
 }
+
+/* @media (width < 1) {
+    
+} */
 
 .plans_sec {
     min-height: 90vh;
