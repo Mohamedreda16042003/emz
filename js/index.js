@@ -20,5 +20,3 @@ linkes.forEach((ele) => {
 btnMenu.addEventListener("click", () => {
     listNav.classList.toggle("activer_menu-nav");
 });
-
-// active_link
