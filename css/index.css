@@ -425,6 +425,32 @@ img {
     background-color: var(--header-color);
 }
 
+.coll_foot svg {
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.coll_foot {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+@media (width < 530px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .facel {
+        height: 1px;
+        width: 25px;
+    }
+    .home_footer {
+        height: 100px;
+    }
+}
+
 @media (width < 820px) {
     .power_sec {
         flex-direction: column;
