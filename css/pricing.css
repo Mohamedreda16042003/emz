@@ -45,3 +45,61 @@
 #pricing_header {
     min-height: 170px;
 }
+
+/* ........................ */
+.offer_top a {
+    color: var(--bold-color);
+    font-size: 2rem;
+}
+.offer_top a span {
+    color: blue;
+    font-size: 2rem;
+}
+
+.offer_top {
+    text-align: center;
+    max-width: 700px;
+}
+
+.sec_offer {
+    background-color: #007eff44;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* new btn .............. */
+
+.btn_new {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #e0f5fd;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.btn_new:hover {
+    background: #e0f5fd;
+}
+
+.btn_new > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn_new:hover svg {
+    transform: translateX(5px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
