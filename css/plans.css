@@ -8,7 +8,7 @@
     padding: 10px;
     background-color: #fff;
     color: #697e91;
-    max-width: 300px;
+    max-width: 380px;
     margin: 40px 20px;
 }
 
@@ -161,4 +161,8 @@
 
 .plans_sec {
     min-height: 90vh;
+}
+
+#contact_mail {
+    color: #939393;
 }
