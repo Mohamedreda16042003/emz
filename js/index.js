@@ -28,8 +28,11 @@ const textComment = document.getElementById("comment_area");
 const apComment = document.getElementById("all_comment");
 
 commentBtn.addEventListener("click", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     post();
+    setTimeout(() => {
+        window.location.reload();
+    }, 500);
 });
 
 function post() {
