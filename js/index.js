@@ -32,7 +32,7 @@ commentBtn.addEventListener("click", (e) => {
     post();
     setTimeout(() => {
         window.location.reload();
-    }, 500);
+    }, 1500);
 });
 
 function post() {
