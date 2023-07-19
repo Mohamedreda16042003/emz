@@ -744,3 +744,80 @@ body::-webkit-scrollbar-thumb {
 .see_more:hover {
     background-color: #0071e2;
 }
+
+/* .................................. */
+
+
+.add_comment {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.boox_comment {
+    width: 500px;
+    border: 3px solid #0071e244;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.inputs label {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.input_comment {
+    height: 50px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #000000b6;
+    border: 3px solid #0071e244;
+    border-radius: 10px;
+}
+
+.textarea_comment:focus,
+.input_comment:focus {
+    outline: none;
+}
+
+.textarea_comment {
+    color: #000000b6;
+    border: 3px solid #0071e244;
+    border-radius: 10px;
+    min-height: 150px;
+    resize: none;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.label_title {
+    margin-left: 10px;
+    font-weight: 800;
+    color: #000000b6;
+    font-size: 1.2rem;
+}
+
+.boox_comment h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: #0071e2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.btn_comm {
+    margin-bottom: 40px;
+}

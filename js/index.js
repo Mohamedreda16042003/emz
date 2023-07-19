@@ -22,68 +22,58 @@ btnMenu.addEventListener("click", () => {
 });
 // ...........................................
 
-const commentBtn = document.getElementById("comment_btn");
-const nameComment = document.getElementById("name_area");
-const textComment = document.getElementById("comment_area");
+// ................................................
+
+const commentBtn = document.getElementById("btn_comm");
+const nameComment = document.getElementById("input_name");
+const textComment = document.getElementById("textarea_comment");
 const apComment = document.getElementById("all_comment");
 const seeMore = document.getElementById("see_more");
 
-// commentBtn.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   //   post();
-//   setTimeout(() => {
-//     window.location.reload();
-//   }, 1500);
-// });
+let res;
 
-// function post() {
-//     axios
-//         .post("http://localhost:1337/api/comments", {
-//             data: {
-//                 Name: nameComment.value,
-//                 Comment: textComment.value,
-//             },
-//         })
-//         .then(function (response) {
-//             console.log(response);
-//         })
-//         .catch(function (error) {
-//             console.log(error);
-//         });
-// }
-
-// async function getComment() {
-//     const res = await axios.get("http://localhost:1337/api/comments");
-
-//     addToComment(res.data.data);
-// }
-
-//^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-
-
-import { data } from "./data.js";
-
-//^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-
-
-let numComment = 5;
-
-seeMore.addEventListener("click", () => {
-  numComment += 5;
-  addToComment(data);
+commentBtn.addEventListener("click", (e) => {
+  post();
+  nameComment.value = "";
+  textComment.value = "";
+  setTimeout(() => {
+    location.reload();
+  }, 1500);
 });
 
-addToComment(data);
+function post() {
+  axios
+    .post("https://emz-strapi.onrender.com/api/reviews", {
+      data: {
+        name: nameComment.value,
+        comment: textComment.value,
+      },
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+
+async function getComment() {
+  res = await axios.get("https://emz-strapi.onrender.com/api/reviews");
+
+  addToComment(res.data.data);
+}
 
 function addToComment(arr) {
   let comment = "";
-  for (let i = 0; i < numComment; i++) {
+  for (let i = 0; i < arr.length; i++) {
     comment += `
         <div class="comment_card">
             <div class="div_img">
                 <img src="./img/user-removebg-preview.png" alt="">
-                <h4>${arr[i].name}</h4>
+                <h4>${arr[i].attributes.name}</h4>
             </div>
             <div>
-                <p>${arr[i].comment}</p>
+                <p>${arr[i].attributes.comment}</p>
             </div>
         </div>
         `;
@@ -92,4 +82,4 @@ function addToComment(arr) {
   apComment.innerHTML = comment;
 }
 
-// getComment();
+getComment();
