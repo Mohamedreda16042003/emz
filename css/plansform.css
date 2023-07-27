@@ -1,0 +1,46 @@
+.plan_form {
+  padding: 40px 0;
+  margin: 40px 0;
+}
+
+.form_plans {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.input_plan {
+  width: 60%;
+}
+
+textarea {
+  resize: none;
+}
+
+.input_plan:nth-child(1) .input_plan_price,
+.input_plan:nth-child(2) .input_plan_price,
+.input_plan:nth-child(3) .input_plan_price {
+  padding: 15px;
+  width: 100%;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 10;
+  outline: none;
+}
+
+
+.input_plan:nth-child(1) .label_plan_title,
+.input_plan:nth-child(2) .label_plan_title,
+.input_plan:nth-child(3) .label_plan_title {
+  position: absolute;
+  transform: translate(15px, -25px);
+  background-color: white;
+  padding: 5px 10px;
+  z-index: 20;
+  color: #5a5a5a;
+}
+
+
